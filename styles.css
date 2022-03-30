@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Mono:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600&display=swap');
+
+::selection{
+	background-color: #E5A53E;
+	color: #FFFFFF;
+}
+
+body{
+	font-family: 'Red Hat Mono', monospace;
+}
+
+input[type="text"]{
+	text-align: center;
+	}
+
+h1{
+	font-family: 'Amatic SC', cursive;
+	font-size: 90px;
+	color: #3FCCBE;
+}
+
+h2{
+	font-family: 'Patrick Hand', cursive;
+	font-size: 30px;
+}
+
+.fecha{
+	font-family: 'Baloo 2', cursive;
+	font-size: 25px;
+}
+
+.form{
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap:  10px;
+		margin: 0 auto;
+		max-width: 800px;
+	}
+
+.btn{
+	background-color: #7AAC95;
+	padding: 8px 10px;
+	grid-column: 1/3;
+}
+
+.c_result{
+	padding: 7px 10px;
+	grid-column: 1/3;
+}
+
+.btn_regreso{
+	background-color: #CDE0D9;
+	padding: 8px 10px;
+	grid-column: 1/3;
+	border: dashed;
+	margin: 0 auto;
+}

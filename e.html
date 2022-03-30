@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Mayor de edad</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<!--Solicitar el año de nacimiento y determinar si la persona es mayor de edad o no-->
+</head>
+<body>
+
+	<form class="form">
+		<p>Ingrese su año de nacimiento <input type="text" id="an"></p>
+		<input type="button" class="btn" value="Enviar" onclick="edad()">
+		<input type="text" class="c_result" id="result" disabled>
+		<input type="button" class="btn_regreso" value="Regresar a la Página Principal" onclick="document.location.href='index.html'">
+	</form>
+
+	<script>
+		function edad(){
+
+			var y = Number(document.getElementById("an").value);
+
+			var edad = 2022 - y
+
+			if (edad>=18) {
+				r = String("Es mayor de edad");
+				document.getElementById("result").value = r;
+			}
+
+			else{
+				r = String("No es mayor de edad")
+				document.getElementById("result").value = r;
+			}
+
+		}
+		
+	</script>
+
+</body>
+</html>

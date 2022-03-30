@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Negativo, positivo o 0</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<!--Determinar si un numero ingresado por el usuario es - + o 0-->
+</head>
+
+<body>
+
+	<form class="form">
+		<p>Ingrese un número <input type="text" id="num"></p>
+		<input type="button" class="btn" value="Enviar" onclick="menor()">
+		<input type="text" class="c_result" id="result" disabled>
+		<input type="button" class="btn_regreso" value="Regresar a la Página Principal" onclick="document.location.href='index.html'">
+	</form>
+
+	<script>
+		function menor(){
+
+			var n = Number(document.getElementById("num").value);
+
+			if (n>0){
+				var r = String("Es positivo")
+				document.getElementById("result").value = r;
+			}
+
+			else if (n<0){
+				var r = String("Es negativo")
+				document.getElementById("result").value = r;
+			}
+
+			else{
+				var r = String("Es igual a 0")
+				document.getElementById("result").value = r;
+			}
+
+		}		
+
+	</script>
+
+</body>
+</html>

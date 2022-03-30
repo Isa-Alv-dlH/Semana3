@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Suma</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<!--Solicitar un número y sumar todos los anteriores a el hasta 0, finalmente muestra la suma y la cantidad de números sumados-->
+</head>
+
+<body>	
+
+	<form class="form">
+
+		<p>Ingrese un número <input type="text" id="num"></p>
+		<input type="button" class="btn" value="Enviar" onclick="sumar()">
+		<input type="text" class="c_result" id="result" disabled>
+		<input type="button" class="btn_regreso" value="Regresar a la Página Principal" onclick="document.location.href='index.html'">
+
+	</form>
+
+	<script>
+
+		function sumar(){
+
+			var n = Number(document.getElementById("num").value);
+			var sum = 0;
+			var x = 1;
+
+			while (x <= n) {
+				sum = sum+x;
+				x=x+1;
+			}
+			document.getElementById("result").value=sum;
+
+		}		
+
+	</script>
+
+</body>
+</html>

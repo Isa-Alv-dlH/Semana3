@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Signo Zodiacal</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<!-- Solicitar día y mes de nacimiento para determinar el signo zodiacal de una persona-->
+</head>
+<body>
+
+	<p align="center">Ingrese su día de nacimiento</p>
+
+	<form class="form">
+		<p>Día: <input type="text" id="dia" placeholder="DD"></p>
+		<p>Mes: <input type="text" id="mes" placeholder="MM"></p>
+
+		<input type="button" class="btn" value="Enviar" onclick="signo_z()">
+		<input type="text" class="c_result" id="result" disabled>
+		<input type="button" class="btn_regreso" value="Regresar a la Página Principal" onclick="document.location.href='index.html'">
+	</form>
+
+	<script>
+
+		function signo_z(){
+
+			var d = Number(document.getElementById("dia").value);
+			var m = Number(document.getElementById("mes").value);
+
+			var signo = String("Tu signo es ")
+			var s1 = String("Aries") // 21 marzo - 21 abril
+			var s2 = String("Tauro")// 21 abril - 21 mayo
+			var s3 = String("Gemini")// 21 mayo - 21 junio
+			var s4 = String("Cancer")// 21 junio - 21 julio
+			var s5 = String("Leo")// 21 julio - 21 agosto
+			var s6 = String("Virgo")// 21 agosto - 21 septiembre
+			var s7 = String("Libra")// 21 septiembre - 21 octubre
+			var s8 = String("Escoprio")// 21 octubre - 21 noviembre
+			var s9 = String("Sagitario")// 21 noviembre - 21 diciembre
+			var s10 = String("Capricornio")// 21 diciembre -  21 enero
+			var s11 = String("Acuario")// 21 enero - 21 febrero
+			var s12 = String("Piscis")// 21 febrero - 21 marzo
+
+			if ((m == 1 && d >= 21) || (m == 2 && d <= 19)) {
+				var text = signo + s11
+				document.getElementById("result").value = text
+			} 
+			else if ((m == 2 && d >= 20) || (m == 3 && d <= 20)) {
+				var text = signo + s12
+				document.getElementById("result").value = text
+			}
+			else if ((m == 3 && d >= 21) || (m == 4 && d <= 20)) {
+				var text = signo + s1
+				document.getElementById("result").value = text
+			} 
+			else if ((m == 4 && d >= 21) || (m == 5 && d <= 20)) {
+				var text = signo + s2
+				document.getElementById("result").value = text
+			}
+			else if ((m == 5 && d >= 21) || (m == 6 && d <= 21)) {
+				var text = signo + s3
+				document.getElementById("result").value = text
+			} 
+			else if ((m == 6 && d >= 22) || (m == 7 && d <= 22)) {
+				var text = signo + s4
+				document.getElementById("result").value = text
+			} 
+			else if ((m == 7 && d >= 23) || (m == 8 && d <= 23)) {
+				var text = signo + s5
+				document.getElementById("result").value = text
+			} 
+			else if ((m == 7 && d >= 24) || (m == 8 && d <= 22)) {
+				var text = signo + s6
+				document.getElementById("result").value = text
+			} 
+			else if ((m == 9 && d >= 23) || (m == 10 && d <= 22)) {
+				var text = signo + s7
+				document.getElementById("result").value = text
+			} 
+			else if ((m == 10 && d >= 23) || (m == 11 && d <= 22)) {
+				var text = signo + s8
+				document.getElementById("result").value = text
+			} 
+			else if ((m == 11 && d >= 23) || (m == 12 && d <= 21)) {
+				var text = signo + s9
+				document.getElementById("result").value = text
+			} 
+			else if ((m == 12 && d >= 22) || (m == 1 && d <= 20)) {
+				var text = signo + s10
+				document.getElementById("result").value = text
+			}
+
+		}
+		
+	</script>
+
+</body>
+</html>

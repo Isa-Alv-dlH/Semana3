@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Descuento</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<!--Página para una tienda de zapatos donde por la compra puede tener descuento según el tipo de membresía con la que cuente el cliente-->
+</head>
+
+<style>
+	div {
+		height: 100%;
+		width: 32%;
+		background-color: #F8F9F9;
+		display:inline-block;
+		border-style: hidden;
+		border-width: 1px;
+	}
+</style>
+
+<body>
+
+	<div align="center">
+		<img src="zapatos1.jpg" width=99%>
+		<p align="center"><label for="precio1">$327</label></p>
+		<input type="button" class="btn" value="Comprar" onclick="document.location.href='descuento1.html'">
+	</div>
+
+	<div align="center">
+		<img src="zapatos2.jpg" width=99%>
+		<p align="center"><label for="precio2">$185</label></p>
+		<input type="button" class="btn" value="Comprar" onclick="document.location.href='descuento2.html'">
+	</div>
+
+	<div align="center">
+		<img src="zapatos3.jpg" width=99%>
+		<p align="center"><label for="precio3">$999</label></p>
+		<input type="button" class="btn" value="Comprar" onclick="document.location.href='descuento3.html'">
+	</div>
+
+	<form class="form">
+		<input type="button" class="btn_regreso" value="Regresar a la Página Principal" onclick="document.location.href='index.html'" align="center">
+	</form>
+
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>El número mayor</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<!--Determinar el número mayor de 2 números ingresados por el usuario-->
+</head>
+
+<body>	
+
+	<form class="form">
+
+		<p>Ingrese un número <input type="text" id="num1"></p>
+		<p>Ingrese otro número <input type="text" id="num2"></p>
+		<input type="button" class="btn" value="Enviar" onclick="mayor()">
+		<input type="text" class="c_result" id="result" disabled>
+		<input type="button" class="btn_regreso" value="Regresar a la Página Principal" onclick="document.location.href='index.html'">
+
+	</form>
+
+	<script>
+
+		function mayor(){
+
+			var n1 = Number(document.getElementById("num1").value);
+			var n2 = Number(document.getElementById("num2").value);
+
+			if (n1>n2){
+				document.getElementById("result").value = n1 + " es el mayor.";
+			}
+
+			else{
+				document.getElementById("result").value = n2 + " es el mayor.";
+			}
+
+		}		
+
+	</script>
+
+</body>
+</html>

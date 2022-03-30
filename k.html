@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Orden ascendente</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<!--Solicitar una cantidad de números, y mostrarlos en orden ascendente-->
+</head>
+
+<body>	
+
+	<form class="form">
+
+		<p>Ingrese un número <input type="text" id="num1"></p>
+		<p>Ingrese otro número <input type="text" id="num2"></p>
+		<p>Ingrese otro número <input type="text" id="num3"></p>
+		<p>Ingrese otro número <input type="text" id="num4"></p>
+		<p>Ingrese otro número <input type="text" id="num5"></p>
+		<input type="button" class="btn" value="Enviar" onclick="ascendente()">
+		<input type="text" class="c_result" id="result" disabled>
+		<input type="button" class="btn_regreso" value="Regresar a la Página Principal" onclick="document.location.href='index.html'">
+
+	</form>
+
+	<script>
+
+		function ascendente(){
+
+			var n1 = Number(document.getElementById("num1").value);
+			var n2 = Number(document.getElementById("num2").value);
+			var n3 = Number(document.getElementById("num3").value);
+			var n4 = Number(document.getElementById("num4").value);
+			var n5 = Number(document.getElementById("num5").value);
+
+			const nums = [n1, n2, n3, n4, n5];
+			document.getElementById("result").value=nums.sort()
+
+		}		
+
+	</script>
+
+</body>
+</html>
